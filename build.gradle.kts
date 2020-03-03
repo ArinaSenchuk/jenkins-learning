@@ -15,13 +15,10 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 repositories {
 	mavenCentral()
 }
-//
-//extra["vaadinVersion"] = "14.1.17"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-//	implementation("com.vaadin:vaadin-spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
@@ -31,11 +28,6 @@ dependencies {
 	}
 }
 
-//dependencyManagement {
-//	imports {
-//		mavenBom("com.vaadin:vaadin-bom:${property("vaadinVersion")}")
-//	}
-//}
 
 tasks.withType<Test> {
 	useJUnitPlatform()
