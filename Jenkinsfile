@@ -1,11 +1,9 @@
 pipeline {
-    environment {
-        DOCKERFILE = "Dockerfile.build"
-    }
+    agent { docker { image 'openjdk:11'}}
     stages {
         stage('build') {
             steps {
-                echo 'Pipeline work'
+                echo 'Pipe'
             }
         }
     }
