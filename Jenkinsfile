@@ -1,9 +1,7 @@
 pipeline {
-    agent any
-    tools {
-        gradle 'gradle 6.0.1'
-        jdk 'jdk11'
-     }
+    environment {
+        DOCKERFILE = "Dockerfile.build"
+    }
     stages {
         stage('build') {
             steps {
