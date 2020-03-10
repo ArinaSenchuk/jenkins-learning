@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    image: jen:latest
+    ports:
+      - 8080:8080
+  jenkins:
+    image:
+
+
