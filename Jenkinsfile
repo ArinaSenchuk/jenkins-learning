@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        image 'adoptopenjdk/openjdk11:slim'
+        image 'openjdk11:slim'
     }
     stages {
         stage('build') {

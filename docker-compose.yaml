@@ -1,6 +1,6 @@
 version: "3"
 services:
   web:
-    image: jen:latest
+    image: jenkins-learning:latest
     ports:
       - 8080:8080
