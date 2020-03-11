@@ -1,9 +1,11 @@
 pipeline {
-    agent { dockerfile true }
+    agent {
+        image 'adoptopenjdk/openjdk11:slim'
+    }
     stages {
         stage('build') {
             steps {
-                sh 'gradlew build'
+                sh './gradlew --info --stacktrace build'
             }
         }
     }
